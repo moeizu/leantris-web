@@ -80,7 +80,7 @@
             <div class="col no-offset place-normal push-0 span-1 colstart-0 colend-1 no-frame-overflow align-top partner-logo absolute-position first-child lay-col-needs-leftframe-margin no-parallax type-img id-201 apl-order-default no-sticky" data-type="img" style="padding-top: 2.5vw;z-index:12;" data-yvel="1">
               <div class="img image-transparent-bg landscape lightboxoff">
                 <a href="https://www.haendschke.de/" target="_blank" rel="noopener">
-                  <img class="lay-gif" src="/wp-content/uploads/2021/05/HSD_Logo.gif" alt="HSD Händschke" style="aspect-ratio:407/196;">
+                  <img class="lay-gif loaded" src="/wp-content/uploads/2021/05/HSD_Logo.gif" alt="HSD Händschke" style="aspect-ratio:407/196;">
                 </a>
                 <div class="ph" style="padding-bottom:48.157248157248%;"></div>
               </div>
@@ -201,7 +201,7 @@
             <div class="col no-offset place-normal push-0 span-2 colstart-0 colend-2 no-frame-overflow align-bottom partner-logo first-child no-parallax type-img id-201 apl-order-default no-sticky" data-type="img" style="padding-top: 5vw;z-index:11;" data-yvel="1">
               <div class="img image-transparent-bg landscape lightboxoff">
                 <a href="https://www.haendschke.de/" target="_blank" rel="noopener">
-                  <img class="lay-gif" src="/wp-content/uploads/2021/05/HSD_Logo.gif" alt="HSD Händschke" style="aspect-ratio:407/196;">
+                  <img class="lay-gif loaded" src="/wp-content/uploads/2021/05/HSD_Logo.gif" alt="HSD Händschke" style="aspect-ratio:407/196;">
                 </a>
                 <div class="ph" style="padding-bottom:48.157248157248%;"></div>
               </div>

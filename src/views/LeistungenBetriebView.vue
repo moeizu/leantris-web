@@ -6,7 +6,7 @@
                 
                         
                 <div class="row-inner ">
-                        <div class="column-wrap "><div class="col no-offset place-normal push-8 span-8 colstart-8 colend-16 frame-overflow-right align-top exclusion-spring first-child has-parallax type-html5video id-15 apl-order-default  no-sticky" data-type="html5video" data-yvel="1.1"><div class="html5video landscape autoplay  "><div class="ph" style="padding-bottom:56.25%;"><video preload="auto" data-w="1280" data-h="720" style="aspect-ratio:1280/720;" data-ar="0.5625" playsinline autoplay muted loop class="autoplay no-lazyload  loaded"><source src="https://leantris.ch/wp-content/uploads/2026/05/mixkit-particles-in-motion-going-up-8551-hd-ready.mp4" type="video/mp4"></video></div></div></div></div>
+                        <div class="column-wrap "><div class="col no-offset place-normal push-8 span-8 colstart-8 colend-16 frame-overflow-right align-top exclusion-spring first-child has-parallax type-html5video id-15 apl-order-default  no-sticky" data-type="html5video" data-yvel="1.1"><div class="html5video landscape autoplay  "><div class="ph" style="padding-bottom:56.25%;"><video preload="auto" data-w="1280" data-h="720" style="aspect-ratio:1280/720;" data-ar="0.5625" playsinline autoplay muted loop class="autoplay no-lazyload  loaded"><source src="/wp-content/uploads/2026/05/mixkit-particles-in-motion-going-up-8551-hd-ready.mp4" type="video/mp4"></video></div></div></div></div>
                 </div>
                     </div><div class="row  one-col-row row-col-amt-1 absolute-positioning-vertically-in-apl no-stickies no-y-offsets no-horizontal-grid no-webglslideshow no-row-hoverimage row-id-16  row-1" data-collapsed="false">
                 

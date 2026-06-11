@@ -93,10 +93,15 @@ function transform(html) {
   })
 
   // Bilder lokal aus dem Export laden (liegen unter public/wp-content)
-  // Videos: direkt von Novatrend referenzieren (CLAUDE.md)
+  // Videos von 2021 liegen auf Prod-Novatrend → remote referenzieren (CLAUDE.md).
+  // Die 2026er-Videos existieren auf Prod nicht (404) → lokal aus public/ ausliefern.
   html = html.replace(
-    /src="\/wp-content\/uploads\/([^"]+\.mp4)"/g,
+    /src="\/wp-content\/uploads\/(2021\/[^"]+\.mp4)"/g,
     'src="https://leantris.ch/wp-content/uploads/$1"'
+  )
+  html = html.replace(
+    /src="https:\/\/leantris\.ch\/wp-content\/uploads\/(2026\/[^"]+\.mp4)"/g,
+    'src="/wp-content/uploads/$1"'
   )
 
   // Kaputte/absolute interne Links reparieren
