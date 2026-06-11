@@ -1,20 +1,25 @@
 <template>
   <div class="nf-form-cont" aria-live="polite" role="form">
     <div class="nf-form-layout">
-      <form @submit.prevent="submit">
+      <form novalidate @submit.prevent="submit">
         <div class="nf-form-content">
           <div v-if="variant === 'kontakt'" class="nf-field-container textbox-container label-hidden">
             <div class="nf-field">
               <div class="textbox-wrap field-wrap nf-field-element-wrap">
                 <div class="nf-field-element">
+                  <label class="lea-field-label" :for="`${uid}-name`">Name *</label>
                   <input
+                    :id="`${uid}-name`"
                     v-model="fields.name"
                     type="text"
                     name="name"
                     class="ninja-forms-field nf-element"
-                    placeholder="Name"
+                    :class="{ 'lea-invalid': errors.name }"
+                    autocomplete="name"
                     required
+                    @input="errors.name = ''"
                   >
+                  <p v-if="errors.name" class="lea-field-error">{{ errors.name }}</p>
                 </div>
               </div>
             </div>
@@ -24,14 +29,19 @@
             <div class="nf-field">
               <div class="email-wrap field-wrap nf-field-element-wrap">
                 <div class="nf-field-element">
+                  <label class="lea-field-label" :for="`${uid}-email`">E-Mail-Adresse *</label>
                   <input
+                    :id="`${uid}-email`"
                     v-model="fields.email"
                     type="email"
                     name="email"
                     class="ninja-forms-field nf-element"
-                    placeholder="E-Mail-Adresse"
+                    :class="{ 'lea-invalid': errors.email }"
+                    autocomplete="email"
                     required
+                    @input="errors.email = ''"
                   >
+                  <p v-if="errors.email" class="lea-field-error">{{ errors.email }}</p>
                 </div>
               </div>
             </div>
@@ -41,12 +51,14 @@
             <div class="nf-field">
               <div class="textbox-wrap field-wrap nf-field-element-wrap">
                 <div class="nf-field-element">
+                  <label class="lea-field-label" :for="`${uid}-telefon`">Telefon (optional)</label>
                   <input
+                    :id="`${uid}-telefon`"
                     v-model="fields.telefon"
                     type="tel"
                     name="telefon"
                     class="ninja-forms-field nf-element"
-                    placeholder="Telefon (optional)"
+                    autocomplete="tel"
                   >
                 </div>
               </div>
@@ -80,13 +92,19 @@
             <div class="nf-field">
               <div class="textarea-wrap field-wrap nf-field-element-wrap">
                 <div class="nf-field-element">
+                  <label class="lea-field-label" :for="`${uid}-nachricht`">
+                    {{ variant === 'kontakt' ? 'Anliegen / Nachricht *' : 'Ihre Nachricht *' }}
+                  </label>
                   <textarea
+                    :id="`${uid}-nachricht`"
                     v-model="fields.nachricht"
                     name="nachricht"
                     class="ninja-forms-field nf-element"
-                    :placeholder="variant === 'kontakt' ? 'Anliegen / Nachricht…' : 'Ihre Nachricht…'"
+                    :class="{ 'lea-invalid': errors.nachricht }"
                     required
+                    @input="errors.nachricht = ''"
                   ></textarea>
+                  <p v-if="errors.nachricht" class="lea-field-error">{{ errors.nachricht }}</p>
                 </div>
               </div>
             </div>
@@ -132,13 +150,32 @@ const props = defineProps({
 
 const uid = `nf-${Math.random().toString(36).slice(2, 8)}`
 const fields = reactive({ name: '', email: '', telefon: '', newsletter: false, nachricht: '' })
+const errors = reactive({ name: '', email: '', nachricht: '' })
 const sending = ref(false)
 const status = ref('')
 
 const submitLabel = computed(() => (props.variant === 'kontakt' ? 'Nachricht senden' : 'Senden'))
 
+function validate() {
+  let ok = true
+  if (props.variant === 'kontakt' && !fields.name.trim()) {
+    errors.name = 'Bitte geben Sie Ihren Namen an.'
+    ok = false
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email.trim())) {
+    errors.email = 'Bitte geben Sie eine gültige E-Mail-Adresse an.'
+    ok = false
+  }
+  if (!fields.nachricht.trim()) {
+    errors.nachricht = 'Bitte beschreiben Sie kurz Ihr Anliegen.'
+    ok = false
+  }
+  return ok
+}
+
 async function submit() {
   if (sending.value) return
+  if (!validate()) return
   sending.value = true
   status.value = ''
   try {

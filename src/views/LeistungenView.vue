@@ -6,7 +6,7 @@
                 
                         
                 <div class="row-inner ">
-                        <div class="column-wrap "><div class="col no-offset place-normal push-8 span-8 colstart-8 colend-16 frame-overflow-right align-top exclusion-spring first-child has-parallax type-html5video id-150 apl-order-default  no-sticky" data-type="html5video" data-yvel="1.1"><div class="html5video landscape autoplay  "><div class="ph" style="padding-bottom:56.25%;"><video preload="auto" data-w="640" data-h="360" style="aspect-ratio:640/360;" data-ar="0.5625" playsinline autoplay muted loop class="autoplay no-lazyload  loaded"><source src="https://leantris.ch/wp-content/uploads/2021/05/LEA-Tablet-664912028_LR.mp4" type="video/mp4"></video></div></div></div></div>
+                        <div class="column-wrap "><div class="col no-offset place-normal push-8 span-8 colstart-8 colend-16 frame-overflow-right align-top exclusion-spring first-child has-parallax type-html5video id-150 apl-order-default  no-sticky" data-type="html5video" data-yvel="1.1"><div class="html5video landscape autoplay  "><div class="ph" style="padding-bottom:56.25%;"><video poster="/wp-content/uploads/posters/LEA-Tablet-664912028_LR.jpg" preload="metadata" data-w="640" data-h="360" style="aspect-ratio:640/360;" data-ar="0.5625" playsinline autoplay muted loop class="autoplay no-lazyload  loaded"><source src="https://leantris.ch/wp-content/uploads/2021/05/LEA-Tablet-664912028_LR.mp4" type="video/mp4"></video></div></div></div></div>
                 </div>
                     </div><div class="row  one-col-row row-col-amt-1 absolute-positioning-vertically-in-apl no-stickies no-y-offsets no-horizontal-grid no-webglslideshow no-row-hoverimage row-id-2  row-1" data-collapsed="false">
                 
@@ -95,7 +95,7 @@
                 
                         
                 <div class="row-inner ">
-                        <div class="column-wrap "><div class="col no-offset place-normal push-0 span-8 colstart-0 colend-8 frame-overflow-both align-bottom exclusion-spring first-child no-parallax type-html5video id-150 apl-order-default  no-sticky" data-type="html5video" data-yvel="1"><div class="html5video landscape autoplay  "><div class="ph" style="padding-bottom:56.25%;"><video preload="auto" data-w="640" data-h="360" style="aspect-ratio:640/360;" data-ar="0.5625" playsinline autoplay muted loop class="autoplay no-lazyload  loaded"><source src="https://leantris.ch/wp-content/uploads/2021/05/LEA-Tablet-664912028_LR.mp4" type="video/mp4"></video></div></div></div></div>
+                        <div class="column-wrap "><div class="col no-offset place-normal push-0 span-8 colstart-0 colend-8 frame-overflow-both align-bottom exclusion-spring first-child no-parallax type-html5video id-150 apl-order-default  no-sticky" data-type="html5video" data-yvel="1"><div class="html5video landscape autoplay  "><div class="ph" style="padding-bottom:56.25%;"><video poster="/wp-content/uploads/posters/LEA-Tablet-664912028_LR.jpg" preload="metadata" data-w="640" data-h="360" style="aspect-ratio:640/360;" data-ar="0.5625" playsinline autoplay muted loop class="autoplay no-lazyload  loaded"><source src="https://leantris.ch/wp-content/uploads/2021/05/LEA-Tablet-664912028_LR.mp4" type="video/mp4"></video></div></div></div></div>
                 </div>
                     </div><div class="row  empty row-col-amt-0 no-row-hoverimage row-id-28  row-1" data-collapsed="false">
                 

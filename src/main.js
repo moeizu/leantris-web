@@ -10,6 +10,7 @@ import './styles/grids.css'
 import './styles/grids-subpages.css'
 import './styles/ninja-forms.css'
 import './styles/site-extra.css'
+import './styles/optimizations.css'
 
 const app = createApp(App)
 app.use(router)

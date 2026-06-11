@@ -2,6 +2,8 @@
 
 Stand: 11. Juni 2026 · Basis: Vue-3-Umsetzung in diesem Repo (Stand nach Unterseiten-Fix), abgeglichen mit der Staging-Site und aktuellen UI/UX-Standards.
 
+> **Umsetzungsstand (Branch `design-optimierungen`):** Die Punkte 2.1–2.3, 2.5–2.8 sowie die kreativen Vorschläge 3.1–3.7 (ausser Hover-Video-Preview 3.4, umgesetzt als dezenter Bild-Zoom) sind auf diesem Branch implementiert. Offen bleiben: Referenzen-Inhalte anreichern (2.4, braucht Kundenfreigabe für Zahlen/Zitate) und das Formular-Backend (Formspree-ID in `ContactForm.vue`).
+
 ## 1. Einordnung des Grunddesigns
 
 Das vom Designer entwickelte System ist ein **redaktioneller Swiss-Style-Minimalismus**:

@@ -40,7 +40,16 @@
     </a>
 
     <div class="lay-mobile-icons-wrap new-burger is-fixed" ref="burgerWrap">
-      <div class="burger-wrap right burger-wrap-new burger-has-animation" @click="toggleMenu">
+      <div
+        class="burger-wrap right burger-wrap-new burger-has-animation"
+        role="button"
+        tabindex="0"
+        :aria-expanded="menuOpen ? 'true' : 'false'"
+        :aria-label="menuOpen ? 'Menü schliessen' : 'Menü öffnen'"
+        @click="toggleMenu"
+        @keydown.enter.prevent="toggleMenu"
+        @keydown.space.prevent="toggleMenu"
+      >
         <div class="burger-inner">
           <div class="burger burger-new mobile-menu-icon" :class="{ active: menuOpen }">
             <span class="bread-top"><span class="bread-crust-top"></span></span>
@@ -125,6 +134,8 @@ function showEl(el) {
 
 function onScroll() {
   const y = window.scrollY
+  // Mobile-Header-Kontrast: Blur-Optik erst nach dem Hero (optimizations.css)
+  document.body.classList.toggle('lea-scrolled', y > 50)
   const delta = y - lastY
   if (Math.abs(delta) < 5) return
   if (y > THRESHOLD && delta > 0 && !hidden) {
