@@ -39,7 +39,8 @@ const routes = [
     path: '/loesungen',
     name: 'loesungen',
     component: LoesungenView,
-    meta: { id: 616, slug: 'loesungen', title: 'digitale Betriebsprozesse | Leistungen | Leantris' },
+    // Staging hat hier denselben Titel wie /leistungen (WP-Bug) – korrigiert
+    meta: { id: 616, slug: 'loesungen', title: 'Lösungen für spezifische Betriebsprozesse – Leantris' },
   },
   {
     path: '/referenzen',
