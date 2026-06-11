@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /impressum
+
+Sitemap: https://leantris.ch/sitemap.xml

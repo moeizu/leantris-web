@@ -22,7 +22,7 @@ Die folgenden Abschnitte dienen als Übersicht und Fallback, aber bei Abweichung
 
 ## Tech Stack
 - Vue 3 (Composition API)
-- Vue Router 4 (Hash-Mode für statisches Hosting)
+- Vue Router 4 (History-Mode; SPA-Fallback via public/.htaccess — SEO-Entscheid, siehe docs/content-seo-analyse.md)
 - Vite als Build-Tool
 - Kein CSS-Framework – reines CSS mit CSS-Variables, basierend auf dem Export
 - Animationsbibliothek nur falls nötig nach Analyse des Exports (evtl. AOS oder GSAP)
@@ -322,4 +322,4 @@ C:\Code\leantris-web\
 - `npm run build` → erzeugt `dist/`
 - Inhalt von `dist/` per FTP nach `public_html/` auf Novatrend hochladen
 - WordPress-Dateien können danach entfernt werden
-- `.htaccess` für Vue Router (Hash-Mode braucht keine spezielle Config)
+- `.htaccess` liegt in `public/` und wird mitgebaut (SPA-Fallback, 301-Redirects alter WP-URLs, Asset-Caching)

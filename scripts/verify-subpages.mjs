@@ -1,4 +1,4 @@
-// Verifiziert die Unterseiten-Routen und CTA-Navigation.
+﻿// Verifiziert die Unterseiten-Routen und CTA-Navigation.
 // Nutzung: node scripts/verify-subpages.mjs [base-url]
 import { chromium } from 'playwright-core'
 
@@ -27,9 +27,9 @@ page.on('pageerror', (e) => errors.push(String(e)))
 
 let fail = 0
 
-// 1) Direktaufruf aller Unterseiten-Routen
+// 1) Direktaufruf aller Unterseiten-Routen (History-Mode: echte Pfade)
 for (const r of ROUTES) {
-  await page.goto(`${BASE}/#${r}`, { waitUntil: 'networkidle', timeout: 30000 })
+  await page.goto(`${BASE}${r}`, { waitUntil: 'domcontentloaded', timeout: 30000 })
   await page.waitForTimeout(400)
   const slug = await page.evaluate(() => document.body.dataset.slug)
   const h1 = (await page.locator('h1').first().textContent().catch(() => ''))?.trim() ?? ''
@@ -49,7 +49,7 @@ const CLICKS = [
   ['/cafm', '.lay-content a[href="/hsd-nova-fm-medizintechnik"]', 'hsd-nova-fm-medizintechnik'],
 ]
 for (const [from, sel, expected] of CLICKS) {
-  await page.goto(`${BASE}/#${from}`, { waitUntil: 'networkidle', timeout: 30000 })
+  await page.goto(`${BASE}${from}`, { waitUntil: 'domcontentloaded', timeout: 30000 })
   await page.waitForTimeout(400)
   const link = page.locator(sel).first()
   if ((await link.count()) === 0) {

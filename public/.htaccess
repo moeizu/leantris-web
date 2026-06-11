@@ -1,0 +1,29 @@
+# Leantris – Apache-Konfiguration für die Vue-SPA (Novatrend)
+
+# 301-Redirects alter WordPress-URLs auf neue Routen
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^profil/?$ /ueber-leantris [R=301,L]
+RewriteRule ^hsd-nova-fm-macht-ihr-facility-management-leistungsfaehiger/?$ /cafm [R=301,L]
+RewriteRule ^softwareloesungen-fuer-intelligente-prozesse-im-facility-management-und-in-der-medizintechnik/?$ / [R=301,L]
+
+# SPA-Fallback: alle nicht existierenden Pfade auf index.html
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+# Caching für statische Assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>

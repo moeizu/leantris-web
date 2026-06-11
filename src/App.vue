@@ -29,9 +29,8 @@ const router = useRouter()
 
 // Intro nur beim ersten Laden auf der Startseite (wie im Export: intro-enabled nur Home)
 const showIntro = ref(
-  window.location.hash === '' ||
-    window.location.hash === '#/' ||
-    window.location.hash === '#'
+  window.location.pathname === '/' ||
+    window.location.hash === '#/' // alte Hash-URLs
 )
 
 // Interne Links aus den 1:1 übernommenen Export-Templates abfangen
