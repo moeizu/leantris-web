@@ -1,0 +1,230 @@
+/* Carousel Addon settings refresh */
+
+body[class*="manage-laycarousel"] .wrap { margin-top: 0; }
+body[class*="manage-laycarousel"] #wpbody-content { padding-bottom: 60px; }
+body[class*="manage-laycarousel"] .lay-addon-options { max-width: 900px; }
+
+body[class*="manage-laycarousel"] .lay-addon-topbar {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	flex-wrap: wrap;
+	position: sticky;
+	top: 32px;
+	background: #fff;
+	padding: 10px 20px;
+	border-bottom: 1px solid #e5e5e5;
+	z-index: 20;
+	margin: 0;
+	line-height: 30px;
+	box-sizing: border-box;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-topbar h1 {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	min-width: 210px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #1d2327;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-topbar .submit {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+body[class*="manage-laycarousel"] .layoptions-quickjump-wrap {
+	margin: 14px 0 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+body[class*="manage-laycarousel"] .layoptions-quickjump {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 10px;
+	box-sizing: border-box;
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+body[class*="manage-laycarousel"] .layoptions-quickjump a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 28px;
+	padding: 0 10px;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+	background: #f6f7f7;
+	color: #2c3338;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 1;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-options .layoptions-quickjump a {
+	min-height: 28px !important;
+	padding: 0 10px !important;
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	line-height: 1 !important;
+}
+
+body[class*="manage-laycarousel"] .layoptions-quickjump a:hover {
+	background: #fff;
+	border-color: #8c8f94;
+	color: #1d2327;
+}
+
+body[class*="manage-laycarousel"] .lay-explanation {
+	max-width: none !important;
+	margin-top: 14px;
+}
+
+body[class*="manage-laycarousel"] .notice {
+	margin: 12px 0 0;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card {
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	margin: 28px 0 0;
+	overflow: visible;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card-header {
+	display: block;
+	padding: 0 2px 8px 5px;
+	border: 0;
+	background: transparent;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-step {
+	display: none;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	line-height: 1.35;
+	color: #646970;
+	text-transform: uppercase;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card-body {
+	padding: 4px 18px;
+	border: 1px solid #e5e5e5;
+	border-radius: 10px;
+	background: #fff;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card .form-table {
+	margin: 0;
+	border-collapse: collapse;
+	font-size: 12px;
+	line-height: 1.45;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card .form-table tr {
+	border-top: 1px solid #f0f0f1;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card .form-table tr:first-child {
+	border-top: none;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card .form-table th,
+body[class*="manage-laycarousel"] .lay-addon-card .form-table td {
+	padding: 10px 0;
+	vertical-align: top;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card .form-table th {
+	width: 240px;
+	padding-right: 16px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #1d2327;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card .form-table td {
+	display: table-cell;
+	min-width: 0;
+	font-size: 12px;
+	line-height: 1.45;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card input[type="text"],
+body[class*="manage-laycarousel"] .lay-addon-card input[type="number"] {
+	height: 32px;
+	width: 110px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	padding: 0 8px;
+	box-sizing: border-box;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card select {
+	min-height: 32px;
+	border: 1px solid #8c8f94;
+	border-radius: 4px;
+	max-width: 100%;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card label {
+	font-size: 12px;
+	line-height: 1.45;
+	color: #2c3338;
+}
+
+body[class*="manage-laycarousel"] .lay-addon-card p[style*="font-style"] {
+	margin: 4px 0 0;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #646970;
+	font-style: italic;
+}
+
+body[class*="manage-laycarousel"] .image_preview {
+	display: block;
+	max-width: 160px !important;
+	max-height: 96px;
+	margin: 0 0 8px;
+	object-fit: contain;
+	background: #f6f7f7;
+	border-radius: 4px;
+}
+
+@media (max-width: 782px) {
+	body[class*="manage-laycarousel"] .lay-addon-topbar { top: 46px; margin: 0; }
+	body[class*="manage-laycarousel"] .layoptions-quickjump-wrap,
+	body[class*="manage-laycarousel"] .layoptions-quickjump {
+		box-sizing: border-box;
+		max-width: calc(100vw - 20px);
+	}
+	body[class*="manage-laycarousel"] .lay-addon-card .form-table th,
+	body[class*="manage-laycarousel"] .lay-addon-card .form-table td {
+		display: block;
+		width: 100%;
+		padding-right: 0;
+	}
+	body[class*="manage-laycarousel"] .lay-addon-card .form-table td {
+		display: block;
+		padding-top: 2px;
+	}
+}

@@ -1,0 +1,234 @@
+body[class*='manage-gridderdefaults'] #wpbody .wrap > form table,
+body[class*='manage-gridder-ui'] #wpbody .wrap > form table {
+	display: none;
+}
+body[class*='manage-gridderdefaults'] #wpbody .wrap > form h2,
+body[class*='manage-gridder-ui'] #wpbody .wrap > form h2 {
+	display: none;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody .wrap > form table:last-of-type,
+body[class*='manage-gridder-ui'] #wpbody .wrap > form table:last-of-type {
+	display: block;
+}
+body[class*='manage-gridderdefaults'] #wpbody .wrap > form h2:last-of-type,
+body[class*='manage-gridder-ui'] #wpbody .wrap > form h2:last-of-type {
+	display: block;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody .wrap > form .lay-tabs .lay-tab-content > p,
+body[class*='manage-gridder-ui'] #wpbody .wrap > form .lay-tabs .lay-tab-content > p {
+	text-align: left;
+}
+body[class*='manage-gridderdefaults'] #wpbody .wrap > form .lay-tabs,
+body[class*='manage-gridder-ui'] #wpbody .wrap > form .lay-tabs {
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+}
+body[class*='manage-gridderdefaults'] .submit,
+body[class*='manage-gridder-ui'] .submit {
+	display: inline-block;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody input[type='number'],
+body[class*='manage-gridder-ui'] #wpbody input[type='number'] {
+	width: 165px;
+	border-color: rgb(204, 204, 204);
+	border-radius: 0;
+	color: #3c434a;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody input[type='text'],
+body[class*='manage-gridder-ui'] #wpbody input[type='text'] {
+	width: 250px;
+	border-color: rgb(204, 204, 204);
+	border-radius: 0;
+	color: #3c434a;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody select,
+body[class*='manage-gridder-ui'] #wpbody select {
+	width: 165px;
+	border-color: rgb(204, 204, 204);
+	border-radius: 0;
+	color: #3c434a;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody .lay-rows-section-title,
+body[class*='manage-gridder-ui'] #wpbody .lay-rows-section-title {
+	vertical-align: top;
+	text-align: left;
+	margin-top: 10px;
+	padding: 30px 10px 10px 0;
+	border-top: 1px solid #e5e5e5;
+	width: 100%;
+	line-height: 1.3;
+	font-weight: 400;
+	font-size: 13px;
+	font-weight: 600;
+	color: #3c434a;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody .lay-rows-section-title:first-child,
+body[class*='manage-gridder-ui'] #wpbody .lay-rows-section-title:first-child {
+	border-top: none;
+	padding-top: 10px;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody .lay-rows-title,
+body[class*='manage-gridder-ui'] #wpbody .lay-rows-title {
+	color: #3c434a;
+	vertical-align: top;
+	text-align: left;
+	padding: 20px 10px 20px 0;
+	width: 190px;
+	line-height: 1.3;
+	font-weight: 400;
+	font-size: 14px;
+	font-weight: 400;
+	font-size: 13px;
+}
+body[class*='manage-gridderdefaults'] #wpbody .lay-modal-input-row,
+body[class*='manage-gridder-ui'] #wpbody .lay-modal-input-row {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+body[class*='manage-gridderdefaults'] #wpbody .lay-modal-input-row input:not([type='checkbox']),
+body[class*='manage-gridder-ui'] #wpbody .lay-modal-input-row input:not([type='checkbox']) {
+	width: 100px;
+	height: 30px;
+}
+body[class*='manage-gridderdefaults'] #wpbody .lay-modal-input-row select,
+body[class*='manage-gridder-ui'] #wpbody .lay-modal-input-row select {
+	width: 60px;
+	height: 30px;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody .lay-modal-input-row .lay-rows-title + select,
+body[class*='manage-gridder-ui'] #wpbody .lay-modal-input-row .lay-rows-title + select {
+	width: 167px;
+	margin-left: 0;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody .gridder-buttons-to-show *,
+body[class*='manage-gridder-ui'] #wpbody .gridder-buttons-to-show * {
+	text-align: left;
+}
+
+body[class*='manage-gridderdefaults'] #wpbody .gridder-buttons-to-show .lay-rows-title,
+body[class*='manage-gridder-ui'] #wpbody .gridder-buttons-to-show .lay-rows-title {
+	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+	text-decoration-color: #3c434a;
+	text-decoration-style: solid;
+	padding-top: 15px;
+	padding-bottom: 0;
+}
+
+.lay-tabs {
+	display: inline-block;
+}
+.lay-tabs-content-wrap {
+	position: relative;
+	z-index: 4;
+	padding: 10px 20px 15px 20px;
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: white;
+}
+
+.lay-tabs-tabs {
+	display: flex;
+	margin-top: 60px;
+}
+
+.lay-tabs-tabs span {
+	letter-spacing: 0.01em;
+	border: 1px solid transparent;
+	font-weight: 400;
+	white-space: nowrap;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #3a3a3a;
+	border-radius: 10px 10px 0 0;
+	display: inline-block;
+	border-bottom: none;
+	bottom: -1px;
+	position: relative;
+	list-style: none;
+	padding: 10px 12px;
+	cursor: pointer;
+	margin-bottom: 0 !important;
+	background-color: transparent;
+	border-bottom: 1px solid #e5e5e5;
+	z-index: 2;
+	transition: background-color 300ms ease;
+}
+
+.lay-tabs-tabs span:focus {
+	box-shadow: 0 0 5px hsl(208, 99%, 50%);
+	outline: none;
+	z-index: 3;
+}
+
+.lay-tabs-tabs {
+	padding: 15px 15px 0 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.lay-tabs-tabs span.lay-tab-active {
+	border-color: #e5e5e5;
+	border-bottom: 1px solid #fff;
+	background-color: white;
+	z-index: 4;
+}
+
+.lay-tabs-tabs span:not(.lay-tab-active):before {
+	width: 1px;
+	bottom: 5px;
+	position: absolute;
+	top: 12px;
+	left: -2px;
+	background-color: rgb(187, 187, 187);
+	content: '';
+	display: block;
+}
+.lay-tabs-tabs span:first-child:before {
+	display: none;
+}
+
+.lay-tabs-tabs span:not(.lay-tab-active):hover {
+	background-color: rgb(250, 250, 250);
+	border-color: #e5e5e5;
+	z-index: 3;
+}
+.lay-tabs-tabs span:not(.lay-tab-active):hover:before {
+	display: none;
+}
+
+.lay-tabs-content-wrap .lay-rows-title {
+	padding-right: 0 !important;
+}
+.lay-tabs-content-wrap .lay-modal-input-row {
+	gap: 0 !important;
+}
+.lay-tabs-content-wrap select {
+	margin-left: 5px;
+}
+
+.lay-tab-content {
+	display: none;
+}
+.lay-tab-content-active {
+	display: block;
+}
+
+body[class*='manage-gridderdefaults'] .gridder-color-default,
+body[class*='manage-gridder-ui'] .gridder-color-default {
+	margin-bottom: 6px;
+}
+

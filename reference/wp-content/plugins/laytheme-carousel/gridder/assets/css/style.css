@@ -1,0 +1,283 @@
+body.lay-modal-open {
+	overflow: hidden;
+}
+body.lay-modal-open #wpadminbar {
+	z-index: 3;
+}
+
+#gridder #carousel-modal.lay-input-modal .panel {
+	z-index: 99999;
+}
+
+#gridder #carousel-modal.lay-input-modal .background {
+	z-index: 99998;
+}
+
+#gridder #carousel-modal.lay-input-modal .panel {
+	max-width: 90%;
+}
+
+#gridder #carousel-modal .panel {
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+#carousel-modal .carousel-top-controls-wrap {
+	padding: 10px 15px;
+	width: 100%;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+}
+#carousel-modal .carousel-top-controls-wrap button {
+	vertical-align: top;
+}
+#carousel-modal .carousel-top-controls-wrap input {
+	border-radius: 3px;
+	margin: 0 !important;
+}
+#carousel-modal .carousel-top-controls-wrap input:focus {
+	outline: none !important;
+}
+#carousel-modal .carousel-top-controls-wrap label {
+	font-weight: 400 !important;
+	margin: 0 !important;
+	height: 34px !important;
+	line-height: 34px;
+}
+#carousel-modal .carousel-top-controls-wrap > div {
+	vertical-align: middle;
+}
+
+#carousel-modal .carousel-top-controls-wrap .carousel-settings-btn-wrap {
+	display: inline-block;
+	margin-left: 5px;
+	height: 30px !important;
+	vertical-align: bottom;
+}
+#carousel-modal .carousel-top-controls-wrap .carousel-settings-btn-wrap .carousel-settings-btn {
+	padding: 3px;
+	vertical-align: bottom;
+}
+
+#carousel-modal .carousel-random-order {
+	margin-left: 5px;
+	height: 34px !important;
+}
+
+#carousel-modal .carousel-random-order,
+#carousel-modal .carousel-autoplay {
+	display: inline-block;
+	margin-right: 10px;
+	height: 34px !important;
+}
+
+#carousel-modal .carousel-custom-aspect-ratio {
+	height: 34px !important;
+	display: inline-block;
+}
+#carousel-modal .carousel-custom-aspect-ratio input[type='number'] {
+	display: inline-block;
+	vertical-align: top;
+	width: 50px;
+	margin-top: 5px !important;
+	text-align: center;
+}
+#carousel-modal .carousel-custom-aspect-ratio input[type='number'][disabled='disabled'] {
+	color: lightgray;
+}
+
+#carousel-modal .carousel-aspect-ratio-icon {
+	height: auto;
+	width: auto;
+	background-color: lightgray;
+	display: inline-block;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+#gridder #carousel-modal .panel-body {
+	padding: 0;
+}
+
+#carousel-content-region {
+	padding: 15px;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	height: calc(90vh - 150px);
+}
+#carousel-content-region button.lay-carousel-delete-slide {
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	font-size: 24px;
+	top: 0;
+	padding: 0;
+	text-align: center;
+	width: 25px;
+	height: 25px;
+	line-height: 0;
+	font-weight: 400;
+	color: gray;
+	border-radius: 0;
+	padding-bottom: 3px;
+}
+#carousel-content-region .carousel-text-slide {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#carousel-content-region .carousel-text-slide * {
+	font-size: 12px;
+	margin-bottom: 1em;
+	margin-top: 0;
+	font-weight: 400;
+}
+#carousel-content-region .type-indicator {
+	display: block;
+	background-color: #f5f5f5;
+	font-size: 12px;
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	padding: 5px 10px;
+	left: 0;
+	border: 1px solid #ddd;
+}
+#carousel-content-region .carousel-slide-caption {
+	display: none;
+}
+#carousel-content-region .carousel-slide-caption.show-caption {
+	position: absolute;
+	display: block;
+	background-color: rgba(255, 255, 255, 0.5);
+	font-size: 12px;
+	color: black;
+	z-index: 20;
+	bottom: 0;
+	width: 100%;
+	padding: 8px 10px;
+	left: 0;
+	height: 35px;
+	overflow: hidden;
+	cursor: default;
+	border-top: 1px solid #ddd;
+}
+#carousel-content-region .lay-carousel-slide-parent[data-type='project'] .type-indicator:after {
+	content: 'Project';
+}
+#carousel-content-region .lay-carousel-slide-parent[data-type='img'] .type-indicator:after {
+	content: 'Image';
+}
+#carousel-content-region .lay-carousel-slide-parent[data-type='html5video'] .type-indicator:after {
+	content: '.mp4 Video';
+}
+#carousel-content-region .lay-carousel-slide-parent[data-type='html5video'] .lay-carousel-slide:after {
+	background-image: url(/wp-content/plugins/laytheme-carousel/gridder/assets/img/play.svg);
+	background-size: cover;
+	content: '';
+	position: absolute;
+	width: 30%;
+	padding-bottom: 30%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	border-radius: 50%;
+}
+#carousel-content-region .lay-carousel-slide-parent[data-type='text'] .type-indicator:after {
+	content: 'Text';
+}
+#carousel-content-region .lay-carousel-slide-parent.selected {
+	box-shadow: 0px 0px 3px 1px cyan;
+	background-color: rgba(0, 255, 255, 0.3);
+}
+#carousel-content-region .lay-carousel-slide-parent.selected .lay-carousel-slide,
+#carousel-content-region .lay-carousel-slide-parent.selected .carousel-slide-caption {
+	opacity: 0.5;
+}
+#carousel-content-region .lay-carousel-slide {
+	border: 1px solid #ddd;
+	background: #f5f5f5;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	cursor: all-scroll;
+}
+#carousel-content-region .lay-carousel-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#carousel-content-region .lay-carousel-slide:before {
+	content: '';
+	display: block;
+	padding-bottom: 100%;
+}
+#carousel-content-region .lay-carousel-slide-dragcontainer {
+	display: inline-block;
+	padding: 8px;
+	width: 14.28%;
+	min-width: 150px;
+	box-sizing: border-box;
+	transition: opacity 100ms ease;
+}
+#carousel-content-region .lay-carousel-slide-parent {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+}
+
+#carousel-content-region.dragging .lay-carousel-slide-dragcontainer.sortable-ghost {
+	opacity: 1;
+}
+
+#carousel-content-region.dragging .lay-carousel-slide-dragcontainer {
+	opacity: 0.5;
+}
+
+#gridder .element[data-type='carousel'] .placeholder:after {
+	background-image: url(/wp-content/plugins/laytheme-carousel/gridder/assets/img/carousel.svg);
+	background-size: cover;
+	content: '';
+	position: absolute;
+	width: 100px;
+	padding-bottom: 100px;
+	top: 50%;
+	left: 5%;
+	-webkit-transform: translateY(-50%) rotateZ(180deg);
+	-ms-transform: translateY(-50%) rotateZ(180deg);
+	transform: translateY(-50%) rotateZ(180deg);
+	pointer-events: none;
+	z-index: 2;
+}
+
+#gridder .element[data-type='carousel'] .placeholder:before {
+	background-image: url(/wp-content/plugins/laytheme-carousel/gridder/assets/img/carousel.svg);
+	background-size: cover;
+	content: '';
+	position: absolute;
+	width: 100px;
+	padding-bottom: 100px;
+	top: 50%;
+	right: 5%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	pointer-events: none;
+	z-index: 2;
+}

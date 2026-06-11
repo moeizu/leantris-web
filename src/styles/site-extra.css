@@ -1,0 +1,117 @@
+/* ============================================================
+   Ergänzungen zur statischen Vue-Umsetzung.
+   Ersetzt die Verhaltens-Styles, die das Lay-Theme per JS setzte.
+   Alle Werte stammen aus dem Simply-Static-Export (layData /
+   frontend.app.min.js): Navbar-Hide 300ms, Page-Fade 200ms,
+   Intro 400ms, Mobile-Menü style_3.
+   ============================================================ */
+
+/* View-Wrapper verhält sich wie #grid als Flex-Kind der lay-content
+   (Sticky-Footer-Mechanik aus dem Export) */
+.page-grids {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  width: 100%;
+}
+.page-grids #grid,
+.page-grids #custom-phone-grid {
+  flex: 1 0 auto;
+}
+
+/* Navigation sichtbar (Export blendet sie nach dem Laden ein) */
+.sitetitle,
+.laynav,
+.project-arrow,
+.mobile-title {
+  visibility: visible;
+}
+
+/* Navbar / fixe Nav-Elemente: sanftes Ein-/Ausblenden beim Scrollen */
+.navbar,
+nav.laynav.second_menu,
+.mobile-title,
+.lay-mobile-icons-wrap {
+  transition: transform 300ms ease;
+}
+
+/* Seitenübergang: fade_out_fade_in_2 (200ms, easeInCubic / easeOutCubic) */
+.lay-page-enter-active {
+  transition: opacity 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lay-page-leave-active {
+  transition: opacity 200ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.lay-page-enter-from,
+.lay-page-leave-to {
+  opacity: 0;
+}
+
+/* Intro-Overlay: Layout/Zentrierung kommt aus lay-theme/lay-frontend
+   (.intro fixed + .media 50%/50% translate). Hier nur Scroll-Sperre. */
+body.intro-loading {
+  overflow: hidden;
+}
+
+/* Mobile Menü (style_3): Vollbild-Overlay unterhalb der Menübar */
+@media (max-width: 600px) {
+  body.mobile-menu-open nav.mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 80px 5% 40px 5%;
+  }
+  body.mobile-menu-open nav.mobile-nav ul {
+    display: block;
+  }
+  nav.mobile-nav li a {
+    padding: 12px 0;
+  }
+  /* weisse Menübar oben */
+  .lay-mobile-icons-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: saturate(100%) blur(5px);
+    backdrop-filter: saturate(100%) blur(5px);
+  }
+  .burger-wrap {
+    padding: 10px 16px;
+  }
+  body.mobile-menu-open .lay-mobile-icons-wrap {
+    background-color: #ffffff;
+  }
+}
+
+/* Eigenes Formular: Submit-Button wie der Ninja-Forms-Button im Export
+   (wp-custom.css stylte input[type=button]) */
+.nf-form-content input[type="submit"] {
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: -4px;
+  align-self: flex-start;
+  border-radius: 120px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: box-shadow 100ms ease, background-color 200ms ease, color 200ms ease;
+}
+.nf-form-content input[type="submit"]:hover {
+  background-color: #fff !important;
+  color: #000;
+  opacity: 1 !important;
+}
+.nf-response-msg {
+  margin-top: 1em;
+}
+
+/* Bild-/Video-Platzhalter (.ph) und Positionierung kommen aus lay-theme.css */

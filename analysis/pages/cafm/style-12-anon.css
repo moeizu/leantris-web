@@ -1,0 +1,8 @@
+@media (max-width: 600px){._H1, ._Lead { margin-left: -0.3vw; hyphens: auto; hyphenate-limit-chars: auto 3; hyphenate-limit-lines: 2; 
+    -webkit-hyphens: auto; -webkit-hyphenate-limit-chars: auto 3; -webkit-hyphenate-limit-lines: 2;
+    -ms-hyphens: auto; -ms-hyphenate-limit-chars: auto 3; -ms-hyphenate-limit-lines: 2; }
+    
+._H2 { line-height: 1.2; }
+    
+#footer ._Absatz, #footer ._Default { font-size: 30px; }
+#footer-bottomline ._H3 { font-size: 20px; }}

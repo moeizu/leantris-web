@@ -1,0 +1,142 @@
+
+::selection { color: #26224a; background: #c0b4fa;
+}
+    
+html, body { -webkit-font-feature-settings: "ss01", "ss02", "ss04", "ss08"; -moz-font-feature-settings: "ss01", "ss02", "ss04", "ss08"; -ms-font-feature-settings: "ss01", "ss02", "ss04", "ss08";
+    font-feature-settings: "ss01", "ss02", "ss04", "ss08"; 
+}
+.hyphen { hyphens: auto; hyphenate-limit-chars: auto 5; hyphenate-limit-lines: 1; 
+    -webkit-hyphens: auto; -webkit-hyphenate-limit-chars: auto 5; -webkit-hyphenate-limit-lines: 1;
+    -ms-hyphens: auto; -ms-hyphenate-limit-chars: auto 5; -ms-hyphenate-limit-lines: 1; }
+
+a[href^="tel:"] { font-variant-numeric: tabular-nums; -moz-font-feature-settings: "tnum"; -webkit-font-feature-settings: "tnum"; font-feature-settings: "tnum";
+}
+
+
+/* Korr Farbe Navigation */
+.slug-referenzen .navbar { background-color: rgba(0,0,0,.1); border-color: rgba(0,0,0,0); -webkit-backdrop-filter: saturate(100%) blur(5px);
+}
+.slug-referenzen ._Logo { color: rgba(255,255,255,1)!important; }
+.slug-referenzen nav.laynav.primary a, .slug-referenzen nav.laynav.second_menu a { color: rgba(255,255,255,1)!important; }
+
+.slug-ihr-team-fuer-zukunftsweisendes-facility-management .navbar { -webkit-backdrop-filter: saturate(100%) blur(20px); }
+
+.slug-ihr-team-fuer-zukunftsweisendes-facility-management ._H2 { padding-top: 10vw; }
+
+
+
+/* Panels BKG */
+.dark { background-color: rgba(0,0,0,.025); margin-bottom: 5vw; }
+.grey { background-color: rgba(0,0,0,.025); }
+.bright { background-color: rgba(255,255,255,.2); }
+.spring { background-color: rgba(182,218,174,.4); }
+.spring-bright { background-color: rgba(182,218,174,.2); }
+.cactus { background-color: rgba(35,80,55,1); }
+
+.mares { background-color: rgba(98,200,184,1); }
+.mares-bright { background-color: rgba(98,200,184,.2); }
+.mares-dark { background-color: rgba(48,106,124,1); }
+
+.mares-bg { background: rgb(98,200,184); background: linear-gradient(160deg, rgba(98,200,184,1) 10%, rgba(48,106,124,1) 100%); }
+
+.spring-panel { margin-left: 5vw; margin-right: 5vw; background-color: rgba(182,218,174,.2); }
+.spring-panel-top { margin-left: 5vw; margin-right: 5vw; margin-top: 5vw; background-color: rgba(182,218,174,.2); }
+
+.white-list { margin-left: -5vw; margin-bottom: 5vw; margin-top: 5vw; padding-left: 5vw; background-color: rgba(0,0,0,.025); }
+.white-list li { padding-bottom: 20px; }
+
+.grey-list { margin-left: -5vw; margin-bottom: 5vw; margin-top: 5vw; padding-left: 5vw; background-color: rgba(255,255,255,1); }
+.grey-list li { padding-bottom: 20px; }
+
+.spring-list { margin-left: -5vw; margin-bottom: 5vw; margin-top: 5vw; padding-left: 5vw; background-color: rgba(182,218,174,.2); }
+.spring-list li { padding-bottom: 20px; }
+
+.cactus-list { margin-left: -5vw; margin-bottom: 5vw; margin-top: 5vw; padding-left: 5vw; background-color: rgba(35,80,55,.2); }
+.cactus-list p { color: rgba(35,80,55,1); }
+
+.exclusion, .exclusion img, .exclusion video { background: rgba(182,218,174,.2); mix-blend-mode: multiply; }
+
+.exclusion-spring { background: rgba(182,218,174,.4); }
+.exclusion-spring img, .exclusion-spring video { filter: grayscale(.4); mix-blend-mode: multiply; }
+
+.exclusion-cactus { background: rgba(35,80,55,.4); }
+.exclusion-cactus img, .exclusion-cactus video { filter: grayscale(.2); mix-blend-mode: multiply; }
+
+.exclusion-violet { background: rgba(62,66,134,.4); }
+.exclusion-violet img, .exclusion-violet video { filter: grayscale(.6); mix-blend-mode: multiply; }
+
+
+.grey-box { background-color: rgba(182,218,174,.2); margin-top: 5vw; margin-bottom: 15vw; padding-top: 2.5vw; padding-bottom: 2.5vw; padding-left: 4vw; }
+.spring-box { background-color: rgba(182,218,174,.2); margin-top: 5vw; margin-bottom: 15vw; padding-top: 2.5vw; padding-bottom: 2.5vw; padding-left: 4vw; }
+
+.cactus-box { background-color: rgba(35,80,55,1); margin-top: 5vw; margin-bottom: 5vw; padding-top: 5vw; padding-bottom: 5vw; padding-left: 4vw; padding-right: 4vw; }
+.cactus-box p { color: rgba(182,218,174,1)!important; }
+
+/* Aktuell */
+
+#aktuell { margin-left: 5vw; margin-right: 5vw; background-color: rgba(182,218,174,.2); }
+#aktuell-container { margin-bottom: 5vw; }
+
+/*  Korr Home */
+
+.slug-home .exclusion-spring { margin-top: 5vw; }
+.slug-home .exclusion-cactus { margin-top: 15vw; }
+.slug-home .exclusion-violet { margin-top: 20vw; }
+
+.slug-ihr-team-fuer-zukunftsweisendes-facility-management .exclusion-spring { margin-top: 15vw; }
+.slug-webinar .exclusion-violet { margin-top: 15vw; }
+
+
+/* Korr Navigation Landingpage - nav-off */
+.slug-placeholder nav.laynav, .slug-placeholder nav.mobile-nav, .slug-placeholder navbar, .slug-placeholder .sitetitle {
+    display: none; }
+
+
+/* Button + Arrow */
+
+.laybutton1 { margin-top: 2.5vw; margin-left: -4px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); align-self: flex-start; -webkit-align-self: flex-start; -ms-flex-item-align: start;
+    transition: box-shadow 100ms ease; -webkit-transition: box-shadow 100ms ease; }
+    
+.laybutton2 { margin-top: 2vw; margin-left: -4px; align-self: flex-start; -webkit-align-self: flex-start; -ms-flex-item-align: start;
+    transition: box-shadow 100ms ease; -webkit-transition: box-shadow 100ms ease; }
+    
+.laybutton3 { margin-top: 2vw; }
+
+a.laybutton, a.laybutton:visited { transition:All .2s ease; -webkit-transition:All .2s ease; -moz-transition:All .2s ease; -o-transition:All .2s ease; }
+a.laybutton:before { content: ""; position: absolute; margin-top: 1rem; width: 80px; }
+a.laybutton:after { content:'→'; padding-left: 1rem; transition:All .2s ease; -webkit-transition:All .2s ease; -moz-transition:All .2s ease; -o-transition:All .2s ease; }
+a.laybutton:hover:after { content:'→'; padding-left: 1.5rem; }
+
+._Arrow, ._Arrow:visited { padding-top: 40px!important; padding-left: 26px; transition:All .2s ease; -webkit-transition:All .2s ease; -moz-transition:All .2s ease; -o-transition:All .2s ease; }
+._Arrow:before { content: ""; position: absolute; margin-top: 1rem; width: 80px; }
+._Arrow:after { content:'→'; padding-left: 1rem; transition:All .2s ease; -webkit-transition:All .2s ease; -moz-transition:All .2s ease; -o-transition:All .2s ease; }
+._Arrow:hover:after { content:'→'; padding-left: 1.5rem; }
+
+._Box { padding-top: 2vw; padding-bottom: 2vw; box-sizing: border-box; margin-top: 2vw; margin-left: -26px; margin-right: -26px; 
+border-top: 1px solid #000; background-color: #fff; }
+
+
+
+/* FORM */
+.nf-form-content { padding: 0!important; margin-top: -32px!important; max-width: 960px!important; }
+.nf-before-form-content, .nf-form-fields-required { visibility: hidden!important; } 
+
+.nf-form-content input[type=button] {
+    cursor: pointer; padding-left: 30px; padding-right: 30px; margin-left: -4px;
+    align-self: flex-start; -webkit-align-self: flex-start; -ms-flex-item-align: start;
+    border-radius: 120px; background-color: #000; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 100ms ease; -webkit-transition: box-shadow 100ms ease;
+}
+.nf-form-content input[type=button]:hover { background-color: #fff!important; opacity: 100!important; }
+
+
+/* FOOTER */
+#footer-bottomline ._H3 { font-size: 15px; }
+#footer-bottomline a { margin-right: 2vw; }
+
+#footer-bottomline .partner-logo { opacity:0.3; } #footer-bottomline .partner-logo:hover { opacity:1; }
+
+/* COOKIE BANNER */
+#cookie-notice { border-top: 1px solid #000; padding-top: 20px!important; padding-bottom: 20px!important; }
+#cn-notice-text { 
+    font-style: normal!important; font-variant: normal!important; font-size: 20px!important; }

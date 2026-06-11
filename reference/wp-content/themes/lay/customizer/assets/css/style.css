@@ -1,0 +1,92 @@
+/**
+ * Code Editor Control and Custom CSS Section
+ *
+ * Modifications to the Section Container to make the textarea full-width and
+ * full-height, if the control is the only control in the section.
+ */
+
+.customize-section-description-container + #customize-control-misc_options_mobile_css .customize-control-title {
+	margin-left: 12px;
+}
+
+.customize-section-description-container + #customize-control-misc_options_mobile_css:last-child textarea {
+	border-right: 0;
+	border-left: 0;
+	height: calc( 100vh - 185px );
+	resize: none;
+}
+
+.customize-section-description-container + #customize-control-misc_options_mobile_css:last-child {
+	margin-left: -12px;
+	width: 299px;
+	width: calc( 100% + 24px );
+	margin-bottom: -12px;
+}
+
+.customize-section-description-container + #customize-control-misc_options_mobile_css:last-child .CodeMirror {
+	height: calc( 100vh - 185px );
+}
+
+.CodeMirror-lint-tooltip,
+.CodeMirror-hints {
+	z-index: 500000 !important;
+}
+
+.customize-section-description-container + #customize-control-misc_options_mobile_css:last-child .customize-control-notifications-container {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+@media screen and ( max-width: 640px ) {
+	.customize-section-description-container + #customize-control-misc_options_mobile_css:last-child {
+		margin-right: 0;
+	}
+
+	.customize-section-description-container + #customize-control-misc_options_mobile_css:last-child textarea {
+		height: calc( 100vh - 140px );
+	}
+}
+
+/* same for desktop css */
+
+.customize-section-description-container + #customize-control-misc_options_desktop_css .customize-control-title {
+	margin-left: 12px;
+}
+
+.customize-section-description-container + #customize-control-misc_options_desktop_css:last-child textarea {
+	border-right: 0;
+	border-left: 0;
+	height: calc( 100vh - 185px );
+	resize: none;
+}
+
+.customize-section-description-container + #customize-control-misc_options_desktop_css:last-child {
+	margin-left: -12px;
+	width: 299px;
+	width: calc( 100% + 24px );
+	margin-bottom: -12px;
+}
+
+.customize-section-description-container + #customize-control-misc_options_desktop_css:last-child .CodeMirror {
+	height: calc( 100vh - 185px );
+}
+
+.CodeMirror-lint-tooltip,
+.CodeMirror-hints {
+	z-index: 500000 !important;
+}
+
+.customize-section-description-container + #customize-control-misc_options_desktop_css:last-child .customize-control-notifications-container {
+	margin-left: 12px;
+	margin-right: 12px;
+}
+
+@media screen and ( max-width: 640px ) {
+	.customize-section-description-container + #customize-control-misc_options_desktop_css:last-child {
+		margin-right: 0;
+	}
+
+	.customize-section-description-container + #customize-control-misc_options_desktop_css:last-child textarea {
+		height: calc( 100vh - 140px );
+	}
+}

@@ -1,0 +1,11 @@
+
+.su-accordion .su-spoiler { margin-bottom: 2vw; }
+.su-spoiler-icon { top: 1.8vw; }
+
+.su-spoiler { margin-left: -26px; margin-right: -26px;  background-color: #fff; padding-top: 2vw; padding-bottom: 2vw; }
+
+.su-spoiler-title {
+    font-family: HelveticaNowDisplay-Regular; font-weight: 300; font-size: 3vw; letter-spacing: 0.03em; line-height: 1.2; padding: 0, border-top: 0px solid #cccccc; }
+
+.su-spoiler-title:focus { outline: none; }
+.su-spoiler-title:hover { opacity: .3 }

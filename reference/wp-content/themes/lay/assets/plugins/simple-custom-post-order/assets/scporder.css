@@ -1,0 +1,24 @@
+.ui-sortable tr:hover {
+	cursor: move;
+}
+.ui-sortable tr.alternate {
+	background-color: #f9f9f9;
+}
+.ui-sortable tr.ui-sortable-helper {
+	background-color: #f9f9f9;
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	opacity: 0.8;
+}
+.ui-sortable-placeholder {
+	visibility: visible !important;
+	display: table-row;
+	box-sizing: border-box;
+}
+.wp-list-table .ui-sortable-placeholder > * {
+	visibility: hidden;
+}
+.wp-list-table .scporder-sort-helper {
+	display: table;
+	width: 100% !important;
+}

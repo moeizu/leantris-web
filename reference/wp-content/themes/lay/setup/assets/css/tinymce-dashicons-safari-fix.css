@@ -1,0 +1,64 @@
+/**
+ * TinyMCE Toolbar Icons – Safari Fix
+ *
+ * Icon rules from wp-includes/css/editor.css (WordPress).
+ * There the content is wrongly written as content: "\f105" / ''; which is invalid
+ * and gets overridden by skin.min.css in Safari. We repeat the rules here with
+ * valid syntax (content: "\f105";) and load after the skin so icons display correctly.
+ */
+body .mce-toolbar .mce-btn i[class^="mce-i-"]:before,
+body .mce-toolbar-grp .mce-btn i[class^="mce-i-"]:before,
+body .qt-dfw:before {
+	font-family: dashicons !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Aus editor.css – gleiche Selektoren & Codepoints, nur content korrigiert (ohne / '') */
+body i.mce-i-bold:before { content: "\f200"; }
+body i.mce-i-italic:before { content: "\f201"; }
+body i.mce-i-bullist:before { content: "\f203"; }
+body i.mce-i-numlist:before { content: "\f204"; }
+body i.mce-i-blockquote:before { content: "\f205"; }
+body i.mce-i-alignleft:before { content: "\f206"; }
+body i.mce-i-aligncenter:before { content: "\f207"; }
+body i.mce-i-alignright:before { content: "\f208"; }
+body i.mce-i-link:before { content: "\f103"; }
+body i.mce-i-unlink:before { content: "\f225"; }
+body i.mce-i-wp_more:before { content: "\f209"; }
+body i.mce-i-strikethrough:before { content: "\f224"; }
+body i.mce-i-spellchecker:before { content: "\f210"; }
+body i.mce-i-fullscreen:before,
+body i.mce-i-wp_fullscreen:before,
+body i.mce-i-dfw:before,
+body .qt-dfw:before { content: "\f211"; }
+body i.mce-i-wp_adv:before { content: "\f212"; }
+body i.mce-i-underline:before { content: "\f213"; }
+body i.mce-i-alignjustify:before { content: "\f214"; }
+body i.mce-i-forecolor:before,
+body i.mce-i-backcolor:before { content: "\f215"; }
+body i.mce-i-pastetext:before { content: "\f217"; }
+body i.mce-i-removeformat:before { content: "\f218"; }
+body i.mce-i-charmap:before { content: "\f220"; }
+body i.mce-i-outdent:before { content: "\f221"; }
+body i.mce-i-indent:before { content: "\f222"; }
+body i.mce-i-undo:before { content: "\f171"; }
+body i.mce-i-redo:before { content: "\f172"; }
+body i.mce-i-help:before,
+body i.mce-i-wp_help:before { content: "\f223"; }
+body i.mce-i-wp-media-library:before { content: "\f104"; }
+body i.mce-i-ltr:before { content: "\f320"; }
+body i.mce-i-wp_page:before { content: "\f105"; }
+body i.mce-i-hr:before { content: "\f460"; }
+body i.mce-i-remove:before { content: "\f158"; }
+body i.mce-i-wp_code:before { content: "\f475"; }
+
+/* RTL (aus editor.css) */
+body .rtl i.mce-i-outdent:before { content: "\f222"; }
+body .rtl i.mce-i-indent:before { content: "\f221"; }
+
+/* Lay-Theme / Custom Buttons (weiterhin mit Dashicons) */
+body i.mce-i-laylink:before { content: "\f103"; }
+body i.mce-i-laynextproject:before { content: "\f344"; }
+body i.mce-i-layprevproject:before { content: "\f340"; }
+body i.mce-i-layscrolltotop:before { content: "\f342"; }

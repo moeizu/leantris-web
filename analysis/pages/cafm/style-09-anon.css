@@ -1,0 +1,66 @@
+
+				body.woocommerce-page{
+					display: flex;
+					flex-direction: column;
+					min-height: 100vh;
+				}
+				body.woocommerce-page #lay-woocommerce{
+                    -webkit-flex: 1 0 auto;
+					flex: 1 0 auto;
+				}
+				body>.lay-content{
+					display: -webkit-flex;
+					display: flex;
+					-webkit-flex-direction: column;
+					flex-direction: column;
+				}
+				/* needs to work for desktop grid and cpl grid container */
+			    #grid, #custom-phone-grid {
+					-webkit-flex: 1 0 auto;
+					flex: 1 0 auto;
+	          	}
+	          	/* firefox fix: note, i removed this because it was causing position sticky to not work */
+	          	/* #footer-region{
+	          		overflow: hidden;
+				} */
+                /* for project overlay */
+                #lay-project-overlay>.lay-content{
+					display: -webkit-box;
+					display: flex;
+					-webkit-box-direction: normal;
+					flex-direction: column;
+				}
+				@media (min-width: 601px){
+					body>.lay-content{
+						min-height: 100vh;
+					}
+                    #lay-project-overlay>.lay-content{
+                        min-height: 100vh;
+                    }
+				}
+				@media (max-width: 600px){
+                    body:not(.woocommerce-page).no-touchdevice.sticky-footer-option-enabled>.lay-content{
+                        min-height: 100vh;
+                    }
+					body.woocommerce-page>.lay-content{
+						min-height: auto;
+					}
+                    body:not(.woocommerce-page).no-touchdevice.sticky-footer-option-enabled #lay-project-overlay>.lay-content{
+                        min-height: 100vh;
+                    }/* account for possible mobile menu menubar height,
+					not if this is a woocommerce page */
+					.no-touchdevice body:not(.woocommerce-page)>.lay-content{
+						min-height: calc(100vh - 40px);
+					}
+                    .no-touchdevice body:not(.woocommerce-page) #lay-project-overlay>.lay-content{
+						min-height: calc(100vh - 40px);
+					}
+					/* page setting: hide menu – treat navbar height as 0 */
+					.no-touchdevice body.lay-hide-menu:not(.woocommerce-page)>.lay-content{
+						min-height: 100vh;
+					}
+                    .no-touchdevice body.lay-hide-menu #lay-project-overlay>.lay-content{
+						min-height: 100vh;
+					}
+				}
+			

@@ -1,0 +1,128 @@
+/* Ask AI Button */
+#lay-ask-ai-button {
+	z-index: 99999;
+	cursor: pointer;
+	transition: opacity 0.2s;
+}
+
+#lay-ask-ai-button:hover {
+}
+
+.lay-ask-ai-button-text {
+	user-select: none;
+	font-size: 12px;
+	line-height: 1;
+}
+
+/* Ask AI Panel - always at bottom right */
+.lay-ask-ai-panel {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999999999999999998;
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity 0.3s ease,
+		visibility 0.3s ease;
+	pointer-events: none;
+	font-size: 0;
+	line-height: 0;
+}
+
+.lay-ask-ai-panel.active {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.lay-ask-ai-overlay {
+	display: none;
+}
+
+.lay-ask-ai-content {
+	background: black;
+	border-radius: 20px;
+	overflow: hidden;
+	width: 480px;
+	max-width: calc(100vw - 40px);
+	height: 600px;
+	max-height: calc(100vh - 120px);
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.lay-ask-ai-header {
+	padding: 0 1px 0 11px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #000000;
+}
+
+.lay-ask-ai-disable-link {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 12px;
+	opacity: 0.3;
+	transition: opacity 0.2s;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.lay-ask-ai-disable-link:hover {
+	opacity: 1;
+	color: #ffffff;
+}
+
+.lay-ask-ai-disable-link:active,
+.lay-ask-ai-disable-link:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.lay-ask-ai-disable-link::selection {
+	background: transparent;
+}
+.lay-ask-ai-disable-link::-moz-selection {
+	background: transparent;
+}
+
+.lay-ask-ai-close {
+	background: none;
+	border: none;
+	font-size: 28px;
+	line-height: 1;
+	cursor: pointer;
+	padding: 0;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	transition: color 0.2s;
+}
+
+.lay-ask-ai-body {
+	flex: 1;
+	position: relative;
+}
+
+#lay-ask-ai-iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/* Disable text selection background in panel */
+.lay-ask-ai-panel ::selection {
+	background: transparent;
+}
+.lay-ask-ai-panel ::-moz-selection {
+	background: transparent;
+}
