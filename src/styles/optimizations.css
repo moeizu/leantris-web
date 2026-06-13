@@ -154,11 +154,15 @@ button:focus-visible,
   transform: translateX(-50%);
   animation: lea-line-draw 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
-.container-fluid .vertical-lines0 { left: 10%; animation-delay: 0.05s; }
-.container-fluid .vertical-lines2 { left: 30%; animation-delay: 0.15s; }
-.container-fluid .vertical-lines4 { left: 50%; animation-delay: 0.25s; }
-.container-fluid .vertical-lines6 { left: 70%; animation-delay: 0.35s; }
-.container-fluid .vertical-lines8 { left: 90%; animation-delay: 0.45s; }
+/* Start erst NACH dem Intro-Overlay (1000ms sichtbar + 400ms Ausblenden,
+   siehe IntroOverlay.vue). Sonst zeichnen sich die Linien verdeckt hinter
+   dem Overlay und sind beim Erscheinen schon fertig. Wie im Original
+   (animation-delay: 1s) bauen sie sich danach gestaffelt links->rechts auf. */
+.container-fluid .vertical-lines0 { left: 10%; animation-delay: 1.15s; }
+.container-fluid .vertical-lines2 { left: 30%; animation-delay: 1.30s; }
+.container-fluid .vertical-lines4 { left: 50%; animation-delay: 1.45s; }
+.container-fluid .vertical-lines6 { left: 70%; animation-delay: 1.60s; }
+.container-fluid .vertical-lines8 { left: 90%; animation-delay: 1.75s; }
 @keyframes lea-line-draw {
   from { transform: translateX(-50%) scaleY(0); }
   to { transform: translateX(-50%) scaleY(1); }
